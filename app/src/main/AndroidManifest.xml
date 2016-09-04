@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cardio.program">
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Cardio"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".DeviceList"
+            android:label="Кардиограф"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".infoActivity"
+            android:label="Кардиограф"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".databaseList"
+            android:label="Сохраненные данные"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".DataTable"
+            android:label=""
+            android:screenOrientation="landscape"></activity>
+    </application>
+
+</manifest>
